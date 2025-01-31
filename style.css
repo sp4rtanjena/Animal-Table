@@ -69,6 +69,16 @@ h3 {
     margin-bottom: 10px;
 }
 
+.btn-success {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 .sort-buttons button {
     background-color: #007bff;
     color: white;

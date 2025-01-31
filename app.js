@@ -116,6 +116,53 @@ renderTable(bigCatsTable, 'big-cats');
 renderTable(dogsTable, 'dogs');
 renderTable(bigFishTable, 'big-fish');
 
+// Add Animal Functionality
+document.getElementById('add-animal-big-cats').addEventListener('click', () => {
+    const newName = prompt("Enter animal name:");
+    const newLocation = prompt("Enter animal location:");
+    const newSize = parseFloat(prompt("Enter animal size (ft):"));
+    const newImage = prompt("Enter image URL:");
+
+    if (newName && newLocation && !isNaN(newSize) && newSize > 0 && newImage) {
+        const newAnimal = new Animal(newName, newImage, newLocation, newSize);
+        bigCatsTable.addAnimal(newAnimal);
+        renderTable(bigCatsTable, 'big-cats');
+    } else {
+        alert("Invalid input! Please provide valid animal details.");
+    }
+});
+
+document.getElementById('add-animal-dogs').addEventListener('click', () => {
+    const newName = prompt("Enter animal name:");
+    const newLocation = prompt("Enter animal location:");
+    const newSize = parseFloat(prompt("Enter animal size (ft):"));
+    const newImage = prompt("Enter image URL:");
+
+    if (newName && newLocation && !isNaN(newSize) && newSize > 0 && newImage) {
+        const newAnimal = new Animal(newName, newImage, newLocation, newSize);
+        dogsTable.addAnimal(newAnimal);
+        renderTable(dogsTable, 'dogs');
+    } else {
+        alert("Invalid input! Please provide valid animal details.");
+    }
+});
+
+document.getElementById('add-animal-big-fish').addEventListener('click', () => {
+    const newName = prompt("Enter animal name:");
+    const newLocation = prompt("Enter animal location:");
+    const newSize = parseFloat(prompt("Enter animal size (ft):"));
+    const newImage = prompt("Enter image URL:");
+
+    if (newName && newLocation && !isNaN(newSize) && newSize > 0 && newImage) {
+        const newAnimal = new Animal(newName, newImage, newLocation, newSize);
+        bigFishTable.addAnimal(newAnimal);
+        renderTable(bigFishTable, 'big-fish');
+    } else {
+        alert("Invalid input! Please provide valid animal details.");
+    }
+});
+
+
 // Delete animal
 function deleteAnimal(name, tableId) {
     let table;
