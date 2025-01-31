@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Tables</title>
+    <!-- Style Page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Animal Tables</h2>
+
+        <!-- Big Cats Table -->
+        <div id="big-cats-table" class="table-responsive mt-4">
+            <h3>Big Cats</h3>
+            <div class="sort-buttons">
+                <button id="sort-by-name-big-cats">Sort by Name</button>
+                <button id="sort-by-size-big-cats">Sort by Size</button>
+                <button id="sort-by-location-big-cats">Sort by Location</button>
+            </div>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Location</th>
+                        <th>Size(ft)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="big-cats-tbody">
+                    <!-- Dynamic content will go here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Dogs Table -->
+        <div id="dogs-table" class="table-responsive mt-4">
+            <h3>Dogs</h3>
+            <div class="sort-buttons">
+                <button id="sort-by-name-dogs">Sort by Name</button>
+                <button id="sort-by-size-dogs">Sort by Size</button>
+                <button id="sort-by-location-dogs">Sort by Location</button>
+            </div>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Location</th>
+                        <th>Size(ft)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="dogs-tbody">
+                    <!-- Dynamic content will go here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Big Fish Table -->
+        <div id="big-fish-table" class="table-responsive mt-4">
+            <h3>Big Fish</h3>
+            <div class="sort-buttons">
+                <button id="sort-by-name-big-fish">Sort by Name</button>
+                <button id="sort-by-size-big-fish">Sort by Size</button>
+                <button id="sort-by-location-big-fish">Sort by Location</button>
+            </div>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Location</th>
+                        <th>Size(ft)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="big-fish-tbody">
+                    <!-- Dynamic content will go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+
+</html>
